@@ -1,0 +1,74 @@
+@font-face {
+  font-family: mysSerif;
+  src: url('./fonts/MODERN TYPEWRITER.ttf');
+}
+*, *::before, *::after {
+  box-sizing: border-box; /* Hereda esta regla a TODOS los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    background-size: cover;
+    font-family:mysSerif;
+    font-size:1.15em;
+    min-height:720px;
+    height:100vh;
+    max-height: max-content;
+    padding:5%;
+}
+
+body {
+  opacity: 0.96;
+  text-align: center;
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+   flex-direction: column;
+}
+
+main, header, footer {
+width:100%
+}
+
+header {
+  padding: 50px;
+}
+footer{
+  margin-top: auto;
+  padding:15px;
+}
+
+main{
+display:flex;
+        }
+img {
+  max-width: 30%;
+            height: auto;
+object-fit: cover;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+html{
+  background-color: #a87664;
+  background-image: url("background-dark.png");
+  }
+  body {
+    background-color: #a8a994;
+
+}
+}
+
+@media (prefers-color-scheme: light) {
+html{
+  background-color: #f0c1b1;
+  background-image: url("background-light.png");
+}
+body {
+    background-color: #feffe1;
+
+}
+}
